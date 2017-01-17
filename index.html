@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+
+<head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info-bar">
+            <div class="player-info">
+                <span id="player-username" class="name"></span>
+                <span id="player-wins" class="win"></span>
+            </div>
+            <div class="opponent-info">
+                <span id="opponent-username" class="name"></span>
+                <span id="opponent-wins" class="win"></span>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="game-grid">
+                <div class="row">
+                    <div class="field" data-row='0' data-col='0'></div>
+                    <div class="field" data-row='0' data-col='1'></div>
+                    <div class="field" data-row='0' data-col='2'></div>
+                </div>
+                <div class="row">
+                    <div class="field" data-row='1' data-col='0'></div>
+                    <div class="field" data-row='1' data-col='1'></div>
+                    <div class="field" data-row='1' data-col='2'></div>
+                </div>
+                <div class="row">
+                    <div class="field" data-row='2' data-col='0'></div>
+                    <div class="field" data-row='2' data-col='1'></div>
+                    <div class="field" data-row='2' data-col='2'></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="modal" class="modal-background !hidden">
+        <div class="modal-body">
+            <input id="username-input" type="text" placeholder="Enter username" autofocus="true">
+            <input id="play-button" type="button" value="Play game">
+        </div>
+    </div>
+    <div id="modal-win" class="modal-background hidden">
+        <div class="modal-body">
+            <span id="modal-win-text"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

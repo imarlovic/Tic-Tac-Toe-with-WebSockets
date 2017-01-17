@@ -1,0 +1,30 @@
+{
+  "name": "tic-tac-toe-with-socketio",
+  "version": "1.0.0",
+  "description": "Simple nodejs server and webpage that implements multiplayer Tic-Tac-Toe game using WebSockets",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imarlovic/RZNU.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "socket.io",
+    "nodejs"
+  ],
+  "author": "Ivan Marlović",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imarlovic/RZNU/issues"
+  },
+  "homepage": "https://github.com/imarlovic/RZNU#readme"
+}
